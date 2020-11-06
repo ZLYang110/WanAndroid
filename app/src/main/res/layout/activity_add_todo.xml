@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.zlylib.titlebarlib.ActionBarCommon
+        android:id="@+id/abc"
+        style="@style/ActionBar.Common"
+        app:ab_immersion="immersed"
+        app:ab_statusBarVisible="auto"
+        app:abc_leftIconRes="@drawable/ic_arraw_back_white"
+        app:abc_rightTextPaddingLeft="0dp"
+        app:abc_rightTextPaddingRight="15dp"
+        app:abc_titleText="新建" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <!--Title-->
+        <TextView
+            android:id="@+id/tv_add_todo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:text="@string/tv_add_todo_title"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_add_todo_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:background="@null"
+            android:hint="@string/hint_add_todo_not_null"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintLeft_toRightOf="@+id/tv_add_todo_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_add_todo_title" />
+
+        <View
+            android:id="@+id/title_divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/Grey300"
+            app:layout_constraintTop_toBottomOf="@+id/et_add_todo_title" />
+
+        <!--Content-->
+        <TextView
+            android:id="@+id/tv_add_todo_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:text="@string/tv_add_todo_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_divider_line" />
+
+        <EditText
+            android:id="@+id/et_add_todo_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/hint_add_todo_null_able"
+            android:inputType="text|textMultiLine"
+            android:minHeight="120dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintLeft_toRightOf="@+id/tv_add_todo_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_add_todo_content" />
+
+        <View
+            android:id="@+id/content_divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/Grey300"
+            app:layout_constraintTop_toBottomOf="@+id/et_add_todo_content" />
+
+        <!--Priority-->
+        <TextView
+            android:id="@+id/tv_add_todo_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:text="@string/tv_add_todo_priority"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content_divider_line" />
+
+        <RadioGroup
+            android:id="@+id/rg_todo_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_add_todo_priority"
+            app:layout_constraintLeft_toRightOf="@+id/tv_add_todo_priority"
+            app:layout_constraintTop_toTopOf="@+id/tv_add_todo_priority">
+
+            <RadioButton
+                android:id="@+id/rb_todo_priority_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/todo_priority_1" />
+
+            <RadioButton
+                android:id="@+id/rb_todo_priority_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="@string/todo_priority_2" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/priority_divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/Grey300"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_todo_priority" />
+
+        <!--Label-->
+        <TextView
+            android:id="@+id/tv_add_todo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:text="@string/tv_add_todo_label"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priority_divider_line" />
+
+        <TextView
+            android:id="@+id/tv_add_todo_label_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_add_todo_label"
+            app:layout_constraintRight_toLeftOf="@+id/iv_label_arrow_right"
+            app:layout_constraintTop_toTopOf="@+id/tv_add_todo_label"
+            tools:text="@string/todo_no_label" />
+
+        <ImageView
+            android:id="@+id/iv_label_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_add_todo_label"
+            android:rotation="180"
+            android:tint="@color/Grey800"
+            android:src="@drawable/ic_back" />
+
+        <View
+            android:id="@+id/label_divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/Grey300"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_todo_label" />
+
+        <!--Date-->
+        <TextView
+            android:id="@+id/tv_add_todo_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:text="@string/tv_add_todo_date"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_divider_line" />
+
+        <TextView
+            android:id="@+id/tv_add_todo_date_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_add_todo_date"
+            app:layout_constraintRight_toLeftOf="@+id/iv_date_arrow_right"
+            app:layout_constraintTop_toTopOf="@+id/tv_add_todo_date"
+            tools:text="2019-01-10" />
+
+        <ImageView
+            android:id="@+id/iv_date_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_add_todo_date"
+            android:rotation="180"
+            android:tint="@color/Grey800"
+            android:src="@drawable/ic_back" />
+
+        <View
+            android:id="@+id/date_divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/Grey300"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_todo_date" />
+
+        <TextView
+            android:id="@+id/bt_todo_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_login_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/bt_todo_save"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/date_divider_line" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

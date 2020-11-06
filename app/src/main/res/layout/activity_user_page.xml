@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/iv_blur"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@color/basic_ui_action_bar_bg"
+        android:scaleType="centerCrop"
+        android:tint="?android:attr/colorPrimary" />
+
+    <com.zlylib.multistateview.MultiStateView
+        android:id="@+id/msv"
+        style="@style/StateView">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnablePureScrollMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:id="@+id/cl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent">
+
+                    <com.google.android.material.appbar.AppBarLayout
+                        android:id="@+id/abl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        app:elevation="0dp">
+
+                        <com.google.android.material.appbar.CollapsingToolbarLayout
+                            android:id="@+id/ctbl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:contentScrim="@color/transparent"
+                            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_user_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="260dp"
+                                app:layout_scrollFlags="scroll|enterAlways">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:id="@+id/civ_user_icon"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="80dp"
+                                    android:background="@color/surface_mask"
+                                    android:scaleType="centerCrop"
+                                    app:riv_corner_radius="80dp"
+                                    app:riv_mutate_background="true" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/civ_user_icon"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="-----"
+                                    android:textColor="@color/basic_ui_action_bar_text"
+                                    android:textSize="@dimen/text_headline" />
+
+                                <LinearLayout
+                                    android:id="@+id/ll_user_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_user_name"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.8"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ID:"
+                                        android:textColor="@color/basic_ui_action_bar_text"
+                                        android:textSize="@dimen/text_notes" />
+
+                                    <TextView
+                                        android:id="@+id/tv_user_id"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-----"
+                                        android:textColor="@color/basic_ui_action_bar_text"
+                                        android:textSize="@dimen/text_notes" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/ll_user_id"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.8">
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_user_coin"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="积分:"
+                                            android:textColor="@color/basic_ui_action_bar_text"
+                                            android:textSize="@dimen/text_notes" />
+
+                                        <TextView
+                                            android:id="@+id/tv_user_coin"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="--"
+                                            android:textColor="@color/basic_ui_action_bar_text"
+                                            android:textSize="@dimen/text_notes" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_user_ranking"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="排名:"
+                                            android:textColor="@color/basic_ui_action_bar_text"
+                                            android:textSize="@dimen/text_notes" />
+
+                                        <TextView
+                                            android:id="@+id/tv_user_ranking"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="--"
+                                            android:textColor="@color/basic_ui_action_bar_text"
+                                            android:textSize="@dimen/text_notes" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                    </com.google.android.material.appbar.AppBarLayout>
+
+                    <com.zlylib.multistateview.MultiStateView
+                        android:id="@+id/msv_list"
+                        style="@style/StateView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/background"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        app:msv_viewState="empty">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/background"
+                            android:overScrollMode="never"
+                            android:scrollbars="none"
+                            tools:layoutmanager="LinearLayoutManager"
+                            tools:listitem="@layout/rv_item_article" />
+
+                    </com.zlylib.multistateview.MultiStateView>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            </LinearLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </com.zlylib.multistateview.MultiStateView>
+
+    <com.zlylib.titlebarlib.ActionBarCommon
+        android:id="@+id/abc"
+        style="@style/ActionBar.Common.Back"
+        app:ab_immersion="immersed"
+        app:ab_statusBarVisible="auto"
+        app:abc_leftIconRes="@drawable/ic_arraw_back_white"
+        android:background="@color/transparent"
+        app:abc_rightText="玩口令" />
+
+</FrameLayout>

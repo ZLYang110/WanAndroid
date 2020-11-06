@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/dialog_web_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:scrollbars="none"
+        tools:background="@color/dialog_bg" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_web_rl_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_def">
+
+        <ImageView
+            android:id="@+id/dialog_web_iv_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:layout_toLeftOf="@+id/dialog_web_iv_close"
+            android:padding="13dp"
+            android:tint="@color/white"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/dialog_web_iv_close"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_solid_round_color_surface_radius_max"
+            android:layout_centerInParent="true"
+            android:padding="13dp"
+            android:tint="@color/text_surface"
+            android:src="@drawable/ic_close" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
