@@ -12,10 +12,10 @@
 [**玩 Android 开放 API**](http://www.wanandroid.com/blog/show/2)
 
 ## 项目截图
-| ![1.jpg]<img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/01.jpg" width="50%" height="50%"> | ![2.jpg]<img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/02.jpg" width="50%" height="50%"> |
-| ![3.jpg]<img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/03.jpg" width="50%" height="50%"> | ![4.jpg]<img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/04.jpg" width="50%" height="50%"> |
-| ![5.jpg]<img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/05.jpg" width="50%" height="50%"> | ![6.jpg]<img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/06.jpg" width="50%" height="50%"> |
-| ![7.jpg]<img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/07.jpg" width="50%" height="50%"> | ![8.jpg]<img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/08.jpg" width="50%" height="50%"> |
+| <img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/01.jpg" width="50%" height="50%"> | <img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/02.jpg" width="50%" height="50%"> |
+| <img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/03.jpg" width="50%" height="50%"> | <img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/04.jpg" width="50%" height="50%"> |
+| <img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/05.jpg" width="50%" height="50%"> | <img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/06.jpg" width="50%" height="50%"> |
+| <img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/07.jpg" width="50%" height="50%"> | <img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/08.jpg" width="50%" height="50%"> |
 
 ## 下载体验
 - 点击[![](https://img.shields.io/badge/Download-apk-green.svg)](https://github.com/ZLYang110/WanAndroid/raw/master/app/build/outputs/apk/debug/app-debug.apk) 下载
