@@ -18,7 +18,7 @@
 | <img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/07.jpg" width="50%" height="50%"> | <img src="https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/08.jpg" width="50%" height="50%"> |
 
 ## 下载体验
-- 点击[![](https://img.shields.io/badge/Download-apk-green.svg)](https://github.com/ZLYang110/WanAndroid/raw/master/app/build/outputs/apk/debug/app-debug.apk) 下载
+- 点击[![](https://img.shields.io/badge/Download-apk-green.svg)](https://github.com/ZLYang110/WanAndroid/blob/master/screenshot/app-debug.apk) 下载
 
 ## 主要功能
 
