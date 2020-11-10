@@ -292,8 +292,5 @@ public class AboutMeActivity extends BaseMvpActivity<AboutMePresenter> implement
 
     }
 
-    @Override
-    public <T> LifecycleTransformer<T> bindToLife() {
-        return null;
-    }
+
 }

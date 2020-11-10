@@ -96,6 +96,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_press_color_surface"
                     android:paddingLeft="16dp"
+                    android:visibility="gone"
                     android:paddingTop="14dp"
                     android:paddingRight="16dp"
                     android:paddingBottom="14dp">

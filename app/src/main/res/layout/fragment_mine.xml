@@ -468,7 +468,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
                             android:singleLine="true"
-                            android:text="请他喝杯咖啡~"
+                            android:text="枸杞来一杯~"
                             android:textColor="@color/text_accent"
                             android:textSize="@dimen/text_notes" />
 
