@@ -26,6 +26,7 @@ import com.zlyandroid.wanandroid.util.SettingUtils;
 import com.zlylib.upperdialog.TipDialog;
 import com.zlylib.upperdialog.listener.SimpleCallback;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -252,7 +253,7 @@ public class SearchHistoryFragment extends BaseMvpFragment<SearchHistoryPresente
         }
         mHistoryAdapter.addData(0, key);
         int max = SettingUtils.getInstance().getSearchHistoryMaxCount();
-        List<String> list = mHistoryAdapter.getData();
+        List<String> list =new ArrayList<>();
         if (list.size() > max) {
             mHistoryAdapter.remove(list.size() - 1);
         }

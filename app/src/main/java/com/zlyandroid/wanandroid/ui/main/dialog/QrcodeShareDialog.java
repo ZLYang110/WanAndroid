@@ -17,7 +17,6 @@ import com.zlylib.upperdialog.common.AnimatorHelper;
 import com.zlylib.upperdialog.dialog.DialogLayer;
 import com.zlylib.upperdialog.manager.Layer;
 
-import cn.bingoogolapple.qrcode.zxing.QRCodeEncoder;
 
 /**
  * @author zhangliyang
@@ -94,8 +93,8 @@ public class QrcodeShareDialog extends DialogLayer {
         ImageView iv_qrcode = getView(R.id.dialog_qrcode_share_piv_qrcode);
         TextView tv_title = getView(R.id.dialog_qrcode_share_tv_title);
         Bitmap logo = BitmapFactory.decodeResource(getActivity().getResources(), R.mipmap.ic_launcher);
-        Bitmap qrcode = QRCodeEncoder.syncEncodeQRCode(mUrl, 300, Color.BLACK, Color.WHITE, logo);
-        iv_qrcode.setImageBitmap(qrcode);
+       // Bitmap qrcode = QRCodeEncoder.syncEncodeQRCode(mUrl, 300, Color.BLACK, Color.WHITE, logo);
+       // iv_qrcode.setImageBitmap(qrcode);
         tv_title.setText(mTitle);
     }
 

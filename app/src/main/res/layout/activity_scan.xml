@@ -9,25 +9,6 @@
     android:orientation="vertical">
 
 
-    <com.zlyandroid.wanandroid.widget.QRCodeView
-        android:id="@+id/qrCodeView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:qrcv_animTime="1000"
-        app:qrcv_borderColor="@color/transparent"
-        app:qrcv_borderSize="0dp"
-        app:qrcv_cornerColor="@color/transparent"
-        app:qrcv_cornerLength="0dp"
-        app:qrcv_cornerSize="0dp"
-        app:qrcv_isOnlyDecodeScanBoxArea="false"
-        app:qrcv_isScanLineReverse="true"
-        app:qrcv_isShowDefaultScanLineDrawable="true"
-        app:qrcv_isShowLocationPoint="true"
-        app:qrcv_maskColor="@color/transparent"
-        app:qrcv_rectWidth="360dp"
-        app:qrcv_scanLineColor="@color/main"
-        app:qrcv_scanLineMargin="@dimen/margin_def"
-        app:qrcv_verticalBias="0.5" />
 
     <LinearLayout
         android:id="@+id/llTip"

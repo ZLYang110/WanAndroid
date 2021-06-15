@@ -156,7 +156,7 @@
                         android:singleLine="true"
                         android:textColor="@color/basic_ui_action_bar_text_alpha"
                         android:textSize="@dimen/text_notes"
-                        tools:text="https://github.com/goweii" />
+                        tools:text="https://github.com" />
 
                 </LinearLayout>
 

@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
+
+
 android {
     compileSdkVersion compileSdk
     buildToolsVersion buildTools
@@ -37,6 +39,11 @@ greendao {
     daoPackage 'com.zlyandroid.wanandroid.db.greendao'
     targetGenDir 'src/main/java'
 }
+
+kapt {
+    generateStubs = true
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
@@ -59,7 +66,7 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
 
     //持久化Cookie
-    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+     implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
 
 
     //butterknife
@@ -78,7 +85,7 @@ dependencies {
     implementation 'com.r0adkll:slidableactivity:2.0.6'
 
     // 上下滑动
-    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'  //1.0.5及以前版本的老用户升级需谨慎，API改动过大
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'
 
     //异步通知
     implementation 'org.greenrobot:eventbus:3.1.1'
@@ -96,7 +103,8 @@ dependencies {
 
 
     //二维码扫描
-    implementation 'com.github.goweii.BGAQRCode-Android:zxing:v1.3.8'
+   // implementation 'com.github.goweii.BGAQRCode-Android:zxing:v1.3.8'
+    //implementation 'cn.bingoogolapple:bga-qrcode-zxing:v1.0.8'
 
     //崩溃检查
     implementation 'cat.ereza:customactivityoncrash:2.3.0'
